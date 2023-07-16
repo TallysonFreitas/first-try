@@ -16,6 +16,9 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    @media (max-width:640px) {
+        margin: 0 5%;
+    }
 }
 
 .content{
@@ -31,12 +34,18 @@ body{
         border-radius: 24px;
         width: 100%;
         margin-bottom:24px;
+
+        
     }
 
     &--title{
         font-size: 28px;
         text-align: center;
         padding-bottom:24px;
+
+        @media (max-width:640px) {
+            font-size: 24px;
+        }
     }
 
     &--text{
@@ -45,6 +54,10 @@ body{
         color: variaveis.$grayish;
         max-width: 80%;
         padding-bottom:40px;
+        
+        @media (max-width:640px) {
+            font-size: 14px;
+        }
     }
 
 }
